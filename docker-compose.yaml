@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+
+  my-api:
+    build: ./my-api
+    image: koalam/img-api
+    container_name: cont-api
+    expose:
+      - 5000
+    ports:
+      - "5000:5000"
+
+  my-app:
+    build: ./my-app
+    image: koalam/img-app
+    container_name: cont-app
+    expose:
+      - 4200
+    ports:
+      - "4200:4200"
