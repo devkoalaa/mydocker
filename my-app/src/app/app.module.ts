@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { PrincipalComponent } from './principal/principal.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
   imports: [
@@ -13,7 +16,10 @@ import { AppComponent } from './app.component';
     HttpClientModule,
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    PrincipalComponent,
+    SobreComponent,
+    UsuarioComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

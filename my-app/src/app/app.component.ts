@@ -11,7 +11,8 @@ import { Component } from "@angular/core";
 @Injectable()
 export class AppComponent {
   title = 'my-app';
-  url = 'http://localhost:5000/WeatherForecast';
+  // url = 'http://localhost:5000/WeatherForecast';
+  url = 'https://pokeapi.co/api/v2/pokemon/ditto'
   resource: any;
 
   constructor(private http: HttpClient) { }
@@ -20,12 +21,10 @@ export class AppComponent {
     this.getApi().subscribe((data) => {
       this.resource = data;
     })
-
-    console.log(this.resource)
   };
 
   getApi() {
-    console.log("Galinha: ")
+    console.log("Galinha")
 
     return this.http.get(this.url);
   }
