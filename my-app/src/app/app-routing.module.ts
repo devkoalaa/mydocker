@@ -7,10 +7,13 @@ import { SobreComponent } from './sobre/sobre.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 
 const appRoutes: Routes = [
-  { path: 'principal', component: PrincipalComponent }, // www.exemplo.com.br/
-  { path: 'sobre', component: SobreComponent }, // www.exemplo.com.br/sobre
-  { path: 'usuario', component: UsuarioComponent }  // www.exemplo.com.br/usuario
+  // { path: '', redirectTo: 'principal', pathMatch: 'full' },
+
+  { path: '', component: PrincipalComponent },
+  { path: 'sobre', component: SobreComponent },
+  { path: 'usuario', component: UsuarioComponent }
 ];
+
 
 @NgModule({
   imports: [

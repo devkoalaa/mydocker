@@ -10,22 +10,22 @@ import { Component } from "@angular/core";
 
 @Injectable()
 export class AppComponent {
-  title = 'my-app';
-  // url = 'http://localhost:5000/WeatherForecast';
-  url = 'https://pokeapi.co/api/v2/pokemon/ditto'
-  resource: any;
+  // title = 'my-app';
+  // // url = 'http://localhost:5000/WeatherForecast';
+  // url = 'https://pokeapi.co/api/v2/pokemon/ditto'
+  // resource: any;
 
-  constructor(private http: HttpClient) { }
+  // constructor(private http: HttpClient) { }
 
-  fcnConsole() {
-    this.getApi().subscribe((data) => {
-      this.resource = data;
-    })
-  };
+  // fcnConsole() {
+  //   this.getApi().subscribe((data) => {
+  //     this.resource = data;
+  //   })
+  // };
 
-  getApi() {
-    console.log("Galinha")
+  // getApi() {
+  //   console.log("Galinha")
 
-    return this.http.get(this.url);
-  }
+  //   return this.http.get(this.url);
+  // }
 }
